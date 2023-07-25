@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Faisal - Personal Portfolio Website </title>
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon-portfolio/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-portfolio/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-portfolio/favicon-16x16.png">
+    <link rel="manifest" href="favicon-portfolio/site.webmanifest">
+
+    <link rel="stylesheet" href="style-por.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+    <script src="https://kit.fontawesome.com/2610d5394f.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="our_pic_logo/fs-logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#services">My Services </a></li>
+                    <li><a href="work.html">My Work </a></li>
+                    <li><a href="#contact">Contact Me</a></li> 
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Video Editor & Graphic Designer</p>
+                <h1>Hi,  I am <span>Muhammad Faisal</span> From<br> Pakistan</h1>
+            </div>
+        </div>
+    </div>
+
+
+<!--about-->
+
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-1">
+                    <img src="our_pic_logo/about-us-pic.png" >
+                </div>
+                <div  class="about-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a professional Video Editor & Graphic Designer. We handle the project honestly and accurately.
+                     You will see the quality of our work which will satisfy the needs of clients.
+                     I pride myself in providing excellent service to all collaborators and seeing my positive impact on people’s lives and businesses.</p>
+                     <p>I have 3 years of experience in editing with Adobe Premiere Pro, After Effects, Photoshop, Illustrator, Audition, and I will provide you with the best quality post-production.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Video Editing</span><br>Software Use: Adobe Premiere Pro, After Effects & Audition</li>
+                            <li><span>Graphic Designing</span><br>Software Use: Adobe Photoshop, Illustrator & Canva</li>
+                            <li><span>Web Development</span><br>HTML, CSS, JavaScript, Bootstrap & React JS</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Video Editing</span><br>2-3 Years Experience</li>
+                            <li><span>Graphic Designing</span><br>2-3 Years Experience</li>
+                            <li><span>Web Development</span><br>No Experience</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>FSc (Intermediate)</span><br>Rawalpindi</li>
+                            <li><span>Video Editing & Graphic Designing</span><br>Digiskills, Skillshare & Udemy</li>
+                            <li><span>Web Development</span><br>W3School & Coursera (continue learning)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+<!--services-->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-camera"></i>
+                    <h2>Video Editing</h2>
+                    <p>I will provide all types of video editing services such as Special Effects, Text Animation, Custom Made Transitions, Color Grading & Color Correction, Storytelling, Infographics, Motion Graphics & Tracking, Removing Green Screen, intro & outro, and etc.</p>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-pen-to-square"></i>
+                    <h2>Graphic Designing</h2>
+                    <p>I will design creative Social Media Posts, logos, Posters, Banners, Business Cards, letterheads & Envelopes, Brochures, Product packaging, and etc.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>I will provide services of Full-Stack Web Development. </p>
+                    <p>Website Create & Design</p>
+                    <p>HTML, CSS, JavaScript, Bootstrap & React JS</p>
+                    
+                </div>
+            </div>
+
+
+                <!-- Flickity HTML init -->
+                <div class="carousel" data-flickity='{ "fullscreen": true, "lazyLoad": 1 }'>
+                  <div class="carousel-cell">
+                    <video class="carousel-cell-image"
+                      src="images/faisal-intro-por.mp4" poster="images/video-1-thumbnail.jpg" controls > </video>
+                  </div>
+                  <div class="carousel-cell">
+                    <video class="carousel-cell-image"
+                      src="images/portfolio-2-vide0-intro.mp4" poster="images/video-2-thumbnail.jpg" controls > </video>
+                  </div>
+                  <div class="carousel-cell">
+                    <video class="carousel-cell-image"
+                      src="images/introduction video.mp4" poster="images/video-03-thumbnail.jpg" controls > </video>
+                  </div>
+                  
+                  
+                  
+                </div>
+                
+
+
+        </div>
+    </div>
+
+    <!--my work-->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My work </h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/poster-shoe-3.png" >
+                    <div class="layer">
+                        <h3>Poster Design</h3>
+                        <a href="work.html"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/real_estate_poster-2.png" >
+                    <div class="layer">
+                        <h3>Poster Design</h3>
+                        <a href="work.html"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/burger-poster-1.png" >
+                    <div class="layer">
+                        <h3>Poster Design</h3>
+                        <a href="work.html"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <!-- Flickity HTML init -->
+                <div class="carousel" data-flickity='{ "fullscreen": true, "lazyLoad": 1 }'>
+                    <div class="carousel-cell">
+                        <video class="carousel-cell-image"
+                          src="images/video--005.mp4" poster="images/video-005-thumbnail.jpg" controls > </video>
+                      </div>
+                      <div class="carousel-cell">
+                        <video class="carousel-cell-image"
+                          src="images/video-001.mp4" poster="images/video-001-thumbnail.jpg" controls > </video>
+                      </div>
+                    <div class="carousel-cell">
+                      <video class="carousel-cell-image"
+                        src="images/resturant-video-created-sushi.mp4" controls > </video>
+                    </div>
+                    <div class="carousel-cell">
+                      <video class="carousel-cell-image"
+                        src="images/video-0003.mp4" poster="images/video-003-thumbnail.jpg" controls > </video>
+                    </div>
+                    <div class="carousel-cell">
+                        <video class="carousel-cell-image"
+                          src="images/video--0004.mp4" poster="images/video-004-thumbnail.jpg" controls > </video>
+                      </div>
+                    <div class="carousel-cell">
+                        <video class="carousel-cell-image"
+                          src="images/new-crt-vid.mp4"  controls > </video>
+                      </div>
+                    
+            </div>
+            <a href="work.html" class="btn">See More</a>
+        </div>
+    </div>
+
+
+    <!--contact-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <div class="contact-us">
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i>muhammadfaisal7834@gmail.com</p>
+                    <p><i class="fa-solid fa-phone-volume"></i>+92-312-5892320</p>
+                    </div>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-yahoo"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-sharp fa-solid fa-envelope"></i></a>
+                    </div>
+                    <a href="faisal-pk-cv-1.pdf" target="_blank" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name='submit-to-google-sheet'>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" ></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div> 
+            </div>
+            <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-sharp fa-solid fa-copyright"></i> 2023 - Made By Muhammad Faisal | All Rights Reserved. </p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+<!--about js script-->
+    <script>
+        const tablinks = document.getElementsByClassName("tab-links")
+        const tabcontents = document.getElementsByClassName("tab-contents")
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+
+
+    <script>
+        const sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0"
+        }
+        function closemenu(){
+            sidemenu.style.right = "-150px"
+        }
+    </script>
+    
+      
+      <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzYACy7znbLVWzm__7fJHR_DpokpykxqAe_H8ySk8qouqH0e5TPBI5hb7aDiQh5vo8M5g/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg')
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Your Message Send Successfully."
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                }, 3000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+                  <script>
+                    // top button:
+            let mybutton = document.getElementById("myBtn");
+                
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+                
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+              document.body.scrollTop = 0; // For Safari
+              document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+            }
+
+                  </script>
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</body>
+</html>
